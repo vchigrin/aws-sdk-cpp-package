@@ -4,3 +4,6 @@
 [submodule "aws-checksums-pkg/aws-checksums"]
 	path = aws-checksums-pkg/aws-checksums
 	url = https://github.com/awslabs/aws-checksums
+[submodule "aws-c-event-stream-pkg/aws-c-event-stream"]
+	path = aws-c-event-stream-pkg/aws-c-event-stream
+	url = https://github.com/awslabs/aws-c-event-stream.git
