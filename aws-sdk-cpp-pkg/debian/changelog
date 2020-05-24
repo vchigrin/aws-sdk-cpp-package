@@ -1,0 +1,5 @@
+aws-sdk-cpp (1.7.337-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>  Sun, 24 May 2020 23:34:19 +0300

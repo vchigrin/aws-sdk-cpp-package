@@ -1,0 +1,8 @@
+opt/aws-sdk-cpp/include/aws/core/*
+opt/aws-sdk-cpp/include/aws/external/*
+opt/aws-sdk-cpp/include/aws/testing/*
+opt/aws-sdk-cpp/lib/cmake/AWSSDK/*
+opt/aws-sdk-cpp/lib/cmake/aws-cpp-sdk-core/*
+opt/aws-sdk-cpp/lib/cmake/testing-resources/*
+opt/aws-sdk-cpp/lib/pkgconfig/aws-cpp-sdk-core.pc
+opt/aws-sdk-cpp/lib/pkgconfig/testing-resources.pc

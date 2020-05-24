@@ -1,0 +1,48 @@
+Source: aws-sdk-cpp
+Priority: optional
+Maintainer: Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>
+Build-Depends: debhelper (>= 10),
+  aws-c-common-dev (>= 0.4.15),
+  aws-c-event-stream-dev (>= 0.1.4),
+  aws-checksums-dev (>= 0.1.5),
+  clang-9,
+  cmake (>= 3.1),
+  libc++-9-dev,
+  libc++abi-9-dev,
+  libcurl4-openssl-dev,
+  libpulse-dev,
+  libssl-dev,
+  zlib1g-dev,
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/aws/aws-sdk-cpp
+Vcs-Git: https://github.com/aws/aws-sdk-cpp.git
+
+Package: aws-sdk-cpp-core-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: aws-sdk-cpp-core (= ${binary:Version}), ${misc:Depends}
+Description: AWS SDK for C++ core library - dev files.
+
+Package: aws-sdk-cpp-core
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: AWS SDK for C++ core library.
+
+
+Package: aws-sdk-cpp-s3-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: aws-sdk-cpp-s3 (= ${binary:Version}),
+  aws-sdk-cpp-core-dev (= ${binary:Version}),
+  ${misc:Depends}
+Description: AWS SDK for C++ S3 library - dev files.
+
+Package: aws-sdk-cpp-s3
+Architecture: any
+Multi-Arch: same
+Depends: aws-sdk-cpp-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: AWS SDK for C++ S3 library.
