@@ -1,3 +1,6 @@
 [submodule "aws-c-common-pkg/aws-c-common"]
 	path = aws-c-common-pkg/aws-c-common
 	url = https://github.com/awslabs/aws-c-common
+[submodule "aws-checksums-pkg/aws-checksums"]
+	path = aws-checksums-pkg/aws-checksums
+	url = https://github.com/awslabs/aws-checksums
