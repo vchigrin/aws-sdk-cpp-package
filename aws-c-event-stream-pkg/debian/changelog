@@ -1,0 +1,5 @@
+aws-c-event-stream (0.1.4-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>  Sun, 24 May 2020 20:02:58 +0300

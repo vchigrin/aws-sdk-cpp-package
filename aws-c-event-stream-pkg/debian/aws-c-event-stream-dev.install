@@ -1,0 +1,2 @@
+opt/aws-sdk-cpp/include/*
+opt/aws-sdk-cpp/lib/aws-c-event-stream/cmake/*

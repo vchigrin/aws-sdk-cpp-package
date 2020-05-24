@@ -1,0 +1,26 @@
+Source: aws-c-event-stream
+Priority: optional
+Maintainer: Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>
+Build-Depends: debhelper (>= 10), clang-9, cmake (>= 3.1), aws-c-common-dev (>= 0.4.15), aws-checksums-dev (>= 0.1.5)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/awslabs/aws-c-event-stream
+Vcs-Git: https://github.com/awslabs/aws-c-event-stream.git
+
+Package: aws-c-event-stream-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: aws-c-event-stream (= ${binary:Version}),
+  ${misc:Depends}
+Description: AWS C event stream library, development files.
+  C99 implementation of the vnd.amazon.event-stream content-type.
+
+Package: aws-c-event-stream
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends},
+  aws-c-common (>= 0.4.15),
+  aws-checksums (>= 0.1.5),
+Description: AWS C event stream library.
+  C99 implementation of the vnd.amazon.event-stream content-type.
