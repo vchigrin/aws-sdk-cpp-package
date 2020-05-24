@@ -1,0 +1,22 @@
+Source: aws-checksums
+Priority: optional
+Maintainer: Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>
+Build-Depends: debhelper (>= 10), clang-9, cmake (>= 3.0)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/awslabs/aws-checksums
+Vcs-Git: https://github.com/awslabs/aws-checksums.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/aws-checksums.git
+
+Package: aws-checksums-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: aws-checksums(= ${binary:Version}), ${misc:Depends}
+Description: Cross-Platform HW accelerated CRC32c and CRC32, dev. files.
+
+Package: aws-checksums
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Cross-Platform HW accelerated CRC32c and CRC32.
