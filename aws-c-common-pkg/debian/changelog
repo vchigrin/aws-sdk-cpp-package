@@ -1,0 +1,5 @@
+aws-c-common (0.4.15-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>  Sun, 24 May 2020 17:50:44 +0300

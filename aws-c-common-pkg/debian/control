@@ -1,0 +1,22 @@
+Source: aws-c-common
+Priority: optional
+Maintainer: Vyacheslav Chigrin <vyacheslav.chigrin@yandex.ru>
+Build-Depends: debhelper (>= 10), clang-9, cmake (>= 3.0)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/awslabs/aws-c-common
+Vcs-Git: https://github.com/awslabs/aws-c-common.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/aws-c-common.git
+
+Package: aws-c-common-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: aws-c-common (= ${binary:Version}), ${misc:Depends}
+Description: Core c99 package for AWS SDK for C, development. files.
+
+Package: aws-c-common
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Core c99 package for AWS SDK for C.
